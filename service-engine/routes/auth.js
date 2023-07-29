@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const {getFirestoreDB} = require('../firebase/admin.js');
+const {getFirestoreDB} = require('../modules/firebase/admin.js');
 
 router.post('/signup', async (req, res) => {
-    let data = req.body;
+    let data = req.body
     try {
         const db = getFirestoreDB()
         const usersRef = db.collection('users').doc(data.email)
