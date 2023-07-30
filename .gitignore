@@ -1,6 +1,9 @@
 service-engine/sa.json
 service-engine/node_modules/
 
+process-engine/sa.json
 process-engine/.env
 process-engine/node_modules/
+
+sa.json
 .DS_Store

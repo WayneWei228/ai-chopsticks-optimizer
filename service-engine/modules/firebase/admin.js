@@ -1,6 +1,6 @@
 const admin = require("firebase-admin");
 const {getFirestore, Timestamp, FieldValue, Filter} = require('firebase-admin/firestore');
-const serviceAccount = require("../../sa.json");
+const serviceAccount = require("../../../sa.json");
 
 async function initializeAppSA() {
     admin.initializeApp({
